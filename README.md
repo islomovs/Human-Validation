@@ -25,7 +25,7 @@ Any user, regardless of skill level, can add or alter content. Experts must, how
    ```
 2. Navigate to the project directory:
    ```bash
-   cd UzWordnetValidator
+   cd Human-Validation
    ```
 3. Deploy the files to your web server.
 
