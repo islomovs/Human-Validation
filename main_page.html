@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UzDuolingo</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div class="header-inner">
+        <button class="login-btn">
+          <a href="./login_page.html" style="text-decoration: none; color: #fff"
+            >Log In</a
+          >
+        </button>
+        <img class="user-icon" src="img/user-icon.webp" alt="User" />
+      </div>
+    </header>
+    <section>
+      <div class="content">
+        <img src="img/main_image.png" alt="Big Image" />
+      </div>
+      <div class="content">
+        <h2>Start your test now!</h2>
+        <p>Empowering Language Through Community Validation.</p>
+        <button class="login-btn"><a href="./test.html">START TEST</a></button>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Search Interface -->
+      <div class="search-interface">
+        <h2>Search Word</h2>
+        <div class="search-bar">
+          <input type="text" placeholder="Enter a word..." />
+          <button>Search</button>
+        </div>
+      </div>
+
+      <!-- Definitions Section -->
+      <div class="definitions">
+        <h2>Definitions for word: <i>Book</i></h2>
+        <div class="definition">
+          Definition 1: a written or printed work consisting of pages glued or
+          sewn together along one side and bound in covers.
+          <div class="buttons">
+            <button class="modify-btn" onclick="openModal('modifyModal')">
+              Modify
+            </button>
+            <button class="add-btn" onclick="openModal('addModal')">Add</button>
+          </div>
+        </div>
+        <div class="definition">
+          Definition 2: a bound set of blank sheets for writing in.
+          <div class="buttons">
+            <button class="modify-btn" onclick="openModal('modifyModal')">
+              Modify
+            </button>
+            <button class="add-btn" onclick="openModal('addModal')">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Definition Modal -->
+      <div id="addModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('addModal')">&times;</span>
+          <h2>Add Definition</h2>
+          <label class="modal-label" for="add-word">Word</label>
+          <input
+            type="text"
+            id="add-word"
+            class="modal-input"
+            placeholder="Enter the new word"
+          />
+
+          <label class="modal-label" for="add-definition">Definition</label>
+          <textarea
+            id="add-definition"
+            class="modal-textarea"
+            placeholder="Enter the definition"
+          ></textarea>
+
+          <button class="submit-btn">Add Definition</button>
+        </div>
+      </div>
+
+      <!-- Modify Definition Modal -->
+      <div id="modifyModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modifyModal')">&times;</span>
+          <h2>Modify Definition</h2>
+          <label class="modal-label" for="modify-word">Word</label>
+          <input
+            type="text"
+            id="modify-word"
+            class="modal-input"
+            value="Book"
+          />
+
+          <label class="modal-label" for="modify-definition">Definition</label>
+          <textarea id="modify-definition" class="modal-textarea">
+a written or printed work consisting of pages glued or sewn together along one side and bound in covers.</textarea
+          >
+
+          <button class="submit-btn">Modify Definition</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Function to open a modal dialog
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      // Function to close a modal dialog
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+      // Close the modal if the user clicks anywhere outside of the modal content
+      window.onclick = function (event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      };
+    </script>
+
+    <!-- <div class="container">
+      <div class="word-display">
+        <h2>Random Word Display</h2>
+        <div class="word-details">
+          <p><strong>Word:</strong> Book</p>
+          <p><strong>Part of Speech:</strong> Noun</p>
+          <p>
+            <strong>Definition:</strong> a written or printed work consisting of
+            pages glued or sewn together along one side and bound in covers.
+          </p>
+        </div>
+        <button class="edit-btn" onclick="openModal('wordDetailsModal')">
+          Edit Details
+        </button>
+      </div>
+
+      <div class="word-correction">
+        <h2>Word Correction</h2>
+        <form class="correction-form">
+          <label for="corrected-word">Corrected Word</label>
+          <input type="text" id="corrected-word" value="Example" />
+
+          <label for="correction-notes">Correction Notes (optional)</label>
+          <textarea
+            id="correction-notes"
+            rows="3"
+            placeholder="Describe the reason for correction..."
+          ></textarea>
+
+          <div class="text-right">
+            <button type="submit">Submit Correction</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="wordDetailsModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('wordDetailsModal')"
+            >&times;</span
+          >
+          <h2>Word Correction</h2>
+          <label class="modal-label" for="word">Word</label>
+          <input type="text" id="word" class="modal-input" value="Book" />
+
+          <label class="modal-label" for="part-of-speech">Part of Speech</label>
+          <input
+            type="text"
+            id="part-of-speech"
+            class="modal-input"
+            value="Noun"
+          />
+
+          <label class="modal-label" for="definition">Definition</label>
+          <textarea id="definition" class="modal-textarea">
+a written or printed work consisting of pages glued or sewn together along one side and bound in covers.</textarea
+          >
+
+          <label for="correction-notes">Correction Notes (optional)</label>
+          <textarea
+            id="correction-notes"
+            rows="3"
+            placeholder="Describe the reason for correction..."
+          ></textarea>
+          <div class="text-right">
+            <button class="submit-btn">Submit Correction</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <h2>Word Guessing Game</h2>
+      <div class="definition">
+        Definition: An electronic machine that processes data and performs
+        calculations at high speed according to programmed instructions.
+      </div>
+
+      <div class="in-fields">
+        <input type="text" class="input-field" placeholder="User 1 Guess" />
+        <input type="text" class="input-field" placeholder="User 2 Guess" />
+      </div>
+      <button class="submit-button">Submit Guesses</button>
+
+      <div class="results">
+        <p>
+          User 1 Guess: <span class="correct"><i>Computer</i> - Correct!</span>
+        </p>
+        <p>
+          User 2 Guess: <span class="incorrect"><i>Book</i> - Incorrect!</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="last-section">
+      <h2>Modify other words</h2>
+      <div class="modify-list">
+        <div class="modify-box">
+          <p><strong>Traditional Word</strong></p>
+          <button class="login-btn">View</button>
+        </div>
+        <div class="modify-box">
+          <p><strong>Idioms</strong></p>
+          <button class="login-btn">View</button>
+        </div>
+        <div class="modify-box">
+          <p><strong>Signs</strong></p>
+          <button class="login-btn">View</button>
+        </div>
+        <div class="modify-box">
+          <p><strong>Random Word</strong></p>
+          <button class="login-btn">
+            <a href="./modify_page.html">View</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Data Harmony team. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

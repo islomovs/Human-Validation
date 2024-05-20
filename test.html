@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Test</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex: 1;
+        padding: 20px;
+      }
+      .question {
+        margin: 20px 0;
+      }
+      .question p {
+        margin: 0;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: green;
+      }
+      .submit-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div class="header-inner">
+        <button class="login-btn">
+          <a href="./login_page.html" style="text-decoration: none; color: #fff"
+            >Log In</a
+          >
+        </button>
+        <img class="user-icon" src="img/user-icon.webp" alt="User" />
+      </div>
+    </header>
+
+    <div class="container">
+      <form id="testForm">
+        <div class="question">
+          <p>1. Uning uchta opasi …</p>
+          <input type="radio" name="q1" value="correct" /> Bor<br />
+          <input type="radio" name="q1" value="wrong" /> Ekan<br />
+          <input type="radio" name="q1" value="wrong" /> Bo’ldi<br />
+          <input type="radio" name="q1" value="wrong" /> Yoz<br />
+        </div>
+        <div class="question">
+          <p>2. – Qahva istaysizmi? -Xa, men …</p>
+          <input type="radio" name="q2" value="wrong" /> Hohlamayman<br />
+          <input type="radio" name="q2" value="wrong" /> istamayman<br />
+          <input type="radio" name="q2" value="correct" /> hohlayman<br />
+          <input type="radio" name="q2" value="wrong" /> bo’ladi<br />
+        </div>
+        <div class="question">
+          <p>3. U futbolni yoqtir…</p>
+          <input type="radio" name="q3" value="wrong" /> emas<br />
+          <input type="radio" name="q3" value="correct" /> maydi<br />
+          <input type="radio" name="q3" value="wrong" /> ekan<br />
+          <input type="radio" name="q3" value="wrong" /> ma<br />
+        </div>
+        <div class="question">
+          <p>
+            4. Iltimos, men bilan hozir gaplashmang. Men uy vazifalarini
+            bajarishga …
+          </p>
+          <input type="radio" name="q4" value="wrong" /> Harakat<br />
+          <input type="radio" name="q4" value="wrong" /> Urinish<br />
+          <input type="radio" name="q4" value="correct" /> harakat
+          qilmoqdaman<br />
+          <input type="radio" name="q4" value="wrong" /> Uddalash<br />
+        </div>
+        <div class="question">
+          <p>5. Sovuq joyda saqlansin</p>
+          <input type="radio" name="q10" value="wrong" /> Uy jihozlari<br />
+          <input type="radio" name="q10" value="wrong" /> Kitob<br />
+          <input type="radio" name="q10" value="wrong" /> Kiyimlar<br />
+          <input type="radio" name="q10" value="correct" /> Oziq ovqat<br />
+        </div>
+        <div class="question">
+          <p>6. Iltimos, haydovchiga kerakli miqdordagi pulni bering.</p>
+          <input type="radio" name="q10" value="correct" /> Taksida<br />
+          <input type="radio" name="q10" value="wrong" /> Avtobusda<br />
+          <input type="radio" name="q10" value="wrong" /> Bankda<br />
+          <input type="radio" name="q10" value="wrong" /> Bekatda<br />
+        </div>
+        <div class="question">
+          <p>7. – Telefoningiz qayerda? - Men uni o’tgan hafta…</p>
+          <input type="radio" name="q10" value="wrong" /> Yo’qoldi<br />
+          <input type="radio" name="q10" value="wrong" /> Yo’qolgan<br />
+          <input type="radio" name="q10" value="correct" /> Yo’qotdim<br />
+          <input type="radio" name="q10" value="wrong" /> Yo’q<br />
+        </div>
+        <div class="question">
+          <p>8. Uchoq ahiyri parvozga …</p>
+          <input type="radio" name="q10" value="wrong" /> Ko’tarildi<br />
+          <input type="radio" name="q10" value="wrong" /> Tushdi<br />
+          <input type="radio" name="q10" value="wrong" /> Keldi<br />
+          <input type="radio" name="q10" value="correct" /> Haydadi<br />
+        </div>
+        <div class="question">
+          <p>9. Men ortiq sizning kayfiyatingiz bilan … emasman.</p>
+          <input type="radio" name="q10" value="wrong" /> Ko’nikmoqchi<br />
+          <input type="radio" name="q10" value="wrong" /> moslashmoqchi<br />
+          <input type="radio" name="q10" value="wrong" /> O’rtoqlashmoqchi<br />
+          <input type="radio" name="q10" value="correct" />
+          hisoblashmoqchi<br />
+        </div>
+        <div class="question">
+          <p>
+            10. – Maria Klariga qaraganda… – Yo’q, men unday deb o’ylamayman.
+          </p>
+          <input type="radio" name="q10" value="wrong" /> Ko’proq aql<br />
+          <input type="radio" name="q10" value="correct" /> Aqlliroqmi<br />
+          <input type="radio" name="q10" value="wrong" /> Aqli bor<br />
+          <input type="radio" name="q10" value="wrong" /> Kam aql<br />
+        </div>
+
+        <button type="button" class="submit-btn" onclick="calculateResult()">
+          Submit
+        </button>
+      </form>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Data Harmony team. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function calculateResult() {
+        var form = document.getElementById("testForm");
+        var correctAnswers = 0;
+        var totalQuestions = 10;
+
+        for (var i = 1; i <= totalQuestions; i++) {
+          var question = form["q" + i];
+          if (question) {
+            for (var j = 0; j < question.length; j++) {
+              if (question[j].checked && question[j].value === "correct") {
+                correctAnswers++;
+              }
+            }
+          }
+        }
+
+        var resultDiv = document.getElementById("result");
+        resultDiv.innerHTML =
+          "You scored " + correctAnswers + " out of " + totalQuestions;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div class="header-inner">
+        <button class="login-btn">
+          <a href="./login_page.html" style="text-decoration: none; color: #fff"
+            >Log In</a
+          >
+        </button>
+        <img class="user-icon" src="img/user-icon.webp" alt="User" />
+      </div>
+    </header>
+
+    <div class="title">
+      <h1>Welcome to the User Word Generator</h1>
+    </div>
+
+    <div class="container">
+      <!-- Random Word Display Section -->
+      <div class="word-display">
+        <div class="word-display-top">
+          <h2>User Word Generator</h2>
+          <button class="generate-btn" onclick="openModal('wordDetailsModal')">
+            Generate
+          </button>
+        </div>
+        <div class="word-details">
+          <p><strong>Word:</strong> Book</p>
+          <p><strong>Part of Speech:</strong> Noun</p>
+          <p>
+            <strong>Definition:</strong> a written or printed work consisting of
+            pages glued or sewn together along one side and bound in covers.
+          </p>
+        </div>
+        <button class="edit-btn" onclick="openModal('wordDetailsModal')">
+          Edit Details
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Random Word Display. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

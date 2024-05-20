@@ -1,0 +1,648 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-icon {
+  height: 40px;
+}
+.logo img {
+  width: 300px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: auto 20px;
+}
+
+h2 {
+  padding: 0;
+  margin: 10px 0;
+}
+nav {
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+}
+
+.login-main {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.translator-container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  width: 1400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.translator-content {
+  /* margin: 10px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.translator-input,
+.translator-output {
+  width: 50%;
+  margin: 20px;
+}
+
+.translator-input label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.translator-input textarea,
+.translator-output textarea {
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.translate-button,
+.add-modify-button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.translate-button:hover,
+.add-modify-button:hover {
+  background-color: #005f6b;
+}
+
+/*profile page*/
+
+.profile-info,
+.profile-bio,
+.profile-stats,
+.requests-list {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-info h2,
+.profile-bio h2,
+.profile-stats h2,
+.requests-list h2 {
+  margin-top: 0;
+}
+
+.user-avatar {
+  text-align: center;
+}
+
+.user-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-details {
+  margin-top: 20px;
+}
+
+.user-details p {
+  margin: 5px 0;
+}
+
+.profile-stats .user-points,
+.profile-stats .user-rank {
+  margin-top: 20px;
+}
+
+.requests-list ul {
+  padding: 0;
+  margin: 10px;
+}
+
+.request-item {
+  border: 1px solid #989797;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-details {
+  flex-grow: 1;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.requests-list li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+}
+
+.button {
+  margin-left: 10px;
+  background-color: #008cba;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #005f6b;
+}
+
+.last-section {
+  margin: 30px auto;
+  width: 80%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+.modify-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.modify-list-inner {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.modify-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-interface,
+.definitions {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.definition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border-left: 5px solid #007bff;
+  padding: 10px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.definition button {
+  width: 80px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.definition .modify-btn {
+  background-color: #ffc107;
+}
+
+.definition .add-btn {
+  background-color: #28a745;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.modal-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 20px;
+  height: 100px; /* Adjust height as per your needs */
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.word-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.word-display-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-display,
+.word-correction {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.word-display h2,
+.word-correction h2 {
+  color: #333;
+}
+
+.word-details {
+  margin-top: 10px;
+  background: #e9e9e9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.word-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.correction-form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.correction-form input[type="text"],
+.correction-form textarea,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.correction-form button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.correction-form button:hover {
+  background-color: #4cae4c;
+}
+
+/* Utility Classes */
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: #666;
+}
+
+.generate-btn,
+.edit-btn,
+.login-btn {
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: #007bff;
+}
+
+.generate-btn {
+  background-color: #0a8c0a;
+}
+
+/* Button next to Random Word Display */
+.edit-btn {
+  background-color: #007bff;
+  align-self: flex-end;
+  margin: 10px 0;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.modal-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 5px;
+  height: 100px; /* Adjust height as per your needs */
+}
+
+.definition {
+  background: #e9e9e9;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.in-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
